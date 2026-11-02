@@ -1,0 +1,4800 @@
+{
+  "config": {
+    "participants": 5,
+    "transactionsPerRun": 10000,
+    "repetitions": 5,
+    "baseSeed": 72026,
+    "networkJitter": 0.2,
+    "localProcessingMs": 1,
+    "failureDetectionTimeoutMs": 500,
+    "electionTimeoutMs": 200,
+    "concurrency": 100,
+    "probabilities": {
+      "coordinatorCrash": 0.1,
+      "participantCrash": 0.1,
+      "partition": 0.3
+    },
+    "profiles": [
+      {
+        "name": "LAN",
+        "meanDelayMs": 10
+      },
+      {
+        "name": "WAN-Near",
+        "meanDelayMs": 30
+      },
+      {
+        "name": "WAN-Far",
+        "meanDelayMs": 50
+      },
+      {
+        "name": "Cross-Region",
+        "meanDelayMs": 100
+      }
+    ]
+  },
+  "raw": {
+    "normal": [
+      {
+        "rep": 1,
+        "profile": "LAN",
+        "protocol": "2PC",
+        "meanLatencyMs": 24.675573240651005,
+        "txStdMs": 0.7917867034268833,
+        "p99LatencyMs": 25.889113906770945,
+        "throughputTps": 4052.590755430075,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 1,
+        "profile": "LAN",
+        "protocol": "3PC",
+        "meanLatencyMs": 37.00209912843685,
+        "txStdMs": 0.9722993722675386,
+        "p99LatencyMs": 38.68946610856801,
+        "throughputTps": 2702.5493784256146,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 1,
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "meanLatencyMs": 70.0298359603067,
+        "txStdMs": 2.3908749953866693,
+        "p99LatencyMs": 73.64773015677929,
+        "throughputTps": 1427.9627908407576,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 1,
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "meanLatencyMs": 104.98604183425493,
+        "txStdMs": 2.929135558528011,
+        "p99LatencyMs": 110.01188409235328,
+        "throughputTps": 952.5075738913315,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 1,
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "meanLatencyMs": 115.3486272021127,
+        "txStdMs": 3.970876923002471,
+        "p99LatencyMs": 121.39549191389233,
+        "throughputTps": 866.9370622398567,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 1,
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "meanLatencyMs": 172.95819941250096,
+        "txStdMs": 4.966732774909859,
+        "p99LatencyMs": 181.35345772560686,
+        "throughputTps": 578.1743816695415,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 1,
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "meanLatencyMs": 228.54259196970983,
+        "txStdMs": 7.983073240351328,
+        "p99LatencyMs": 240.80561435595155,
+        "throughputTps": 437.5552020222717,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 1,
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "meanLatencyMs": 342.92757583382445,
+        "txStdMs": 9.761407182762893,
+        "p99LatencyMs": 359.7362693976611,
+        "throughputTps": 291.60676203087826,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 2,
+        "profile": "LAN",
+        "protocol": "2PC",
+        "meanLatencyMs": 24.669968025423866,
+        "txStdMs": 0.7932525725231663,
+        "p99LatencyMs": 25.89256372861564,
+        "throughputTps": 4053.5115366563937,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 2,
+        "profile": "LAN",
+        "protocol": "3PC",
+        "meanLatencyMs": 36.99775033735325,
+        "txStdMs": 0.973454095075179,
+        "p99LatencyMs": 38.638454590924084,
+        "throughputTps": 2702.8670415952056,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 2,
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "meanLatencyMs": 69.99656974352776,
+        "txStdMs": 2.3590790632353196,
+        "p99LatencyMs": 73.6253126449883,
+        "throughputTps": 1428.6414372362372,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 2,
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "meanLatencyMs": 104.97191741113839,
+        "txStdMs": 2.9181379990208387,
+        "p99LatencyMs": 109.98564519546926,
+        "throughputTps": 952.6357378834463,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 2,
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "meanLatencyMs": 115.3692115561203,
+        "txStdMs": 4.015988122722856,
+        "p99LatencyMs": 121.43170435260981,
+        "throughputTps": 866.7823819820065,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 2,
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "meanLatencyMs": 173.04746906500728,
+        "txStdMs": 4.838750600067174,
+        "p99LatencyMs": 181.2700392510742,
+        "throughputTps": 577.8761200051637,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 2,
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "meanLatencyMs": 228.76124461745843,
+        "txStdMs": 7.883477149105748,
+        "p99LatencyMs": 240.85284733027223,
+        "throughputTps": 437.1369816912085,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 2,
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "meanLatencyMs": 342.8123866389338,
+        "txStdMs": 9.796006855752113,
+        "p99LatencyMs": 359.6164303384721,
+        "throughputTps": 291.7047455036236,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 3,
+        "profile": "LAN",
+        "protocol": "2PC",
+        "meanLatencyMs": 24.67582148265168,
+        "txStdMs": 0.7895719268882032,
+        "p99LatencyMs": 25.875462708063424,
+        "throughputTps": 4052.5499858355242,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 3,
+        "profile": "LAN",
+        "protocol": "3PC",
+        "meanLatencyMs": 36.9983605523223,
+        "txStdMs": 0.9833565249528797,
+        "p99LatencyMs": 38.66678570024669,
+        "throughputTps": 2702.8224631354165,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 3,
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "meanLatencyMs": 69.96498729056073,
+        "txStdMs": 2.420024092973954,
+        "p99LatencyMs": 73.65324420575052,
+        "throughputTps": 1429.286331243162,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 3,
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "meanLatencyMs": 104.99659339803569,
+        "txStdMs": 2.932562895620318,
+        "p99LatencyMs": 109.95289944950491,
+        "throughputTps": 952.411852267493,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 3,
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "meanLatencyMs": 115.27311444389214,
+        "txStdMs": 4.024006087364517,
+        "p99LatencyMs": 121.41626192070544,
+        "throughputTps": 867.5049727113416,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 3,
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "meanLatencyMs": 173.08819454774027,
+        "txStdMs": 4.857961145950181,
+        "p99LatencyMs": 181.2765070348978,
+        "throughputTps": 577.740152997081,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 3,
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "meanLatencyMs": 228.6958742554998,
+        "txStdMs": 7.9200191798286825,
+        "p99LatencyMs": 240.83567601442337,
+        "throughputTps": 437.26193279848883,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 3,
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "meanLatencyMs": 342.8655092499312,
+        "txStdMs": 9.76151626481599,
+        "p99LatencyMs": 359.57816564664245,
+        "throughputTps": 291.6595495964722,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 4,
+        "profile": "LAN",
+        "protocol": "2PC",
+        "meanLatencyMs": 24.672866788474842,
+        "txStdMs": 0.8002584472622938,
+        "p99LatencyMs": 25.881229428574443,
+        "throughputTps": 4053.0352981402175,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 4,
+        "profile": "LAN",
+        "protocol": "3PC",
+        "meanLatencyMs": 37.00103639288926,
+        "txStdMs": 0.9627404232912012,
+        "p99LatencyMs": 38.65211342647672,
+        "throughputTps": 2702.6270004484977,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 4,
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "meanLatencyMs": 69.97647676905375,
+        "txStdMs": 2.3936029162362518,
+        "p99LatencyMs": 73.64054781291634,
+        "throughputTps": 1429.0516558876511,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 4,
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "meanLatencyMs": 104.98456239087609,
+        "txStdMs": 2.923560421481323,
+        "p99LatencyMs": 110.01187298353761,
+        "throughputTps": 952.5209966364608,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 4,
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "meanLatencyMs": 115.36228105799016,
+        "txStdMs": 3.95452119486948,
+        "p99LatencyMs": 121.40412987489253,
+        "throughputTps": 866.8344547533013,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 4,
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "meanLatencyMs": 172.94317648731683,
+        "txStdMs": 4.923427524364902,
+        "p99LatencyMs": 181.2634671870619,
+        "throughputTps": 578.224605509855,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 4,
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "meanLatencyMs": 228.69978699169027,
+        "txStdMs": 8.011163481529792,
+        "p99LatencyMs": 240.84212212637067,
+        "throughputTps": 437.25445185322127,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 4,
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "meanLatencyMs": 343.0485199900279,
+        "txStdMs": 9.761783050794888,
+        "p99LatencyMs": 359.64843086153274,
+        "throughputTps": 291.50395402640686,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 5,
+        "profile": "LAN",
+        "protocol": "2PC",
+        "meanLatencyMs": 24.666968989549762,
+        "txStdMs": 0.7940914457935878,
+        "p99LatencyMs": 25.881942462176085,
+        "throughputTps": 4054.0043668261515,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 5,
+        "profile": "LAN",
+        "protocol": "3PC",
+        "meanLatencyMs": 37.014261360087154,
+        "txStdMs": 0.9647659975503888,
+        "p99LatencyMs": 38.657443321309984,
+        "throughputTps": 2701.6613684970353,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 5,
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "meanLatencyMs": 69.98084545559549,
+        "txStdMs": 2.416086622003221,
+        "p99LatencyMs": 73.63133579678833,
+        "throughputTps": 1428.962444637117,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 5,
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "meanLatencyMs": 104.98541193705685,
+        "txStdMs": 2.9450414041024624,
+        "p99LatencyMs": 109.9889383977279,
+        "throughputTps": 952.5132887982016,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 5,
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "meanLatencyMs": 115.38668781868088,
+        "txStdMs": 3.912976215656824,
+        "p99LatencyMs": 121.39397162292153,
+        "throughputTps": 866.6511006637127,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 5,
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "meanLatencyMs": 173.0075636084415,
+        "txStdMs": 4.9011224215641604,
+        "p99LatencyMs": 181.1995234405622,
+        "throughputTps": 578.0094113476131,
+        "messagesPerTx": 15
+      },
+      {
+        "rep": 5,
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "meanLatencyMs": 228.56161539460345,
+        "txStdMs": 8.003564541867265,
+        "p99LatencyMs": 240.90824668109417,
+        "throughputTps": 437.5187838402068,
+        "messagesPerTx": 10
+      },
+      {
+        "rep": 5,
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "meanLatencyMs": 342.98433536493036,
+        "txStdMs": 9.626875602048196,
+        "p99LatencyMs": 359.64526722393936,
+        "throughputTps": 291.5585048325937,
+        "messagesPerTx": 15
+      }
+    ],
+    "failures": [
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 996,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.200400981257284
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 981,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 997,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.162188307584872
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 3019,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 998,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.4257639470596
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 978,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.4180635396698
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 995,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.39731142146877
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1024,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.20280993112192
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 3079,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 212.16548958338208
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1030,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.611029759704955
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 949,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 926,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.516907953500315
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 3003,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 984,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.1954241929144
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1015,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.1874100957855
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1034,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.14785746111386
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1020,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.53662510342512
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 2913,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 232.399356848262
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 996,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.013140517785345
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 987,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1032,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 56.95194842593741
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 3053,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1001,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.03940309403646
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1033,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.8865447776935
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1012,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.7925699664328
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 992,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.18536460176279
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 2949,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 252.47346423388603
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1005,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.71317266752546
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1004,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 992,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.20292227190633
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 2925,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 961,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 426.20269337216246
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1036,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.65303112884345
+      },
+      {
+        "rep": 1,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 994,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.7987169572593
+      },
+      {
+        "rep": 1,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 992,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.23923626733237
+      },
+      {
+        "rep": 1,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 2928,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 301.94207577103026
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 989,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.200815843793029
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 1010,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 1022,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.182774224977415
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 3037,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1022,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.4428101471578
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1017,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.38072606291797
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1004,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.4239479361586
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1028,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.216809117062207
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 3019,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 212.04929667383706
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1045,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.53617139612213
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1008,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 998,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.68327081905685
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 2989,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 985,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.1449023284784
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 973,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.16634206275313
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 978,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.16657506844797
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 985,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.66179717480853
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 3064,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 231.5748785992868
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1000,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.03962929418311
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1005,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1011,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.0144001757634
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 2978,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 929,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.9115152713102
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 993,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.32173163820835
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 936,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.86708681164987
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 992,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.111285642588385
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 2939,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 254.3329359571224
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 997,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.81604802572993
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 955,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 988,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.24897717195469
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 2966,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 946,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.8264688771773
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 998,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 426.4532001357645
+      },
+      {
+        "rep": 2,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1037,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.82399440560715
+      },
+      {
+        "rep": 2,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 994,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.11343950725964
+      },
+      {
+        "rep": 2,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 2964,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 303.0137838778129
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 1027,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.20136621129856
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 939,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 992,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.16950418973518
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 2958,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1011,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.364605998859
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1049,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.3962821364838
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 975,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.39265858146146
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1078,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.199372546601321
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 3033,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 211.91794960087756
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 952,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.6616015640555
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1016,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 963,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.560429968981424
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 2979,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1012,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.24787003099516
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1015,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.2051905617063
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 995,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.20908496965325
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1006,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.55327019525162
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 2950,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 231.37194245788254
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 981,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 56.9629717944038
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 995,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1014,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.02727459609982
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 2947,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 955,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.41735002098125
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 993,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.1592736057937
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 984,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.9963059467415
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1070,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 56.98033628990073
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 3064,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 252.44835458938658
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1001,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.02865842090627
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1067,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1036,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.83708094067613
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 2939,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1036,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.8909325017468
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1044,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 426.2719402673415
+      },
+      {
+        "rep": 3,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1036,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.9633090359349
+      },
+      {
+        "rep": 3,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 956,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.55107251250197
+      },
+      {
+        "rep": 3,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 2999,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 300.04718096999227
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 1004,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.19474435103612
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 997,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 998,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.207632739888224
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 2944,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1033,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.44799476209937
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 979,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.42524492103544
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1009,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.34003745034943
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 962,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.208043527103023
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 3026,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 212.05385653161514
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1010,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.61728668771223
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 983,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1068,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.57683078211397
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 3026,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1015,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.17812480158335
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1024,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.2399091042862
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1017,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.2723081025781
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1003,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.61695146143199
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 2983,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 232.20566414743212
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1035,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 56.935450507899304
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 970,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1023,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.081292313152154
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 2978,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 993,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.6998111323312
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1088,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.2917635859759
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1009,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.9279644145733
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1000,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 56.992005398138424
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 3045,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 251.97324796550416
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 965,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.7861857426599
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1010,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 999,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.68040509437313
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 3088,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1010,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 426.33603109577024
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1011,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 426.63480682166625
+      },
+      {
+        "rep": 4,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1005,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.87231740284136
+      },
+      {
+        "rep": 4,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 984,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.01247277257896
+      },
+      {
+        "rep": 4,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 2983,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 300.545857394939
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 950,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.217826405623438
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 1038,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 1007,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.214797718320023
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affected": 3080,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 973,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.4145384375379
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 978,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.39380018558955
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 988,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 224.37464456680053
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 1041,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 12.168628633995679
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affected": 2937,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 212.20748765908712
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 982,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.50843696536538
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 1042,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 977,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.53359725007152
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affected": 3008,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 985,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.33497059294564
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1030,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.1606761611139
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 1022,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 269.2900178179495
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 985,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 34.600001647646735
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affected": 2989,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 232.54811237861304
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1015,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.085709093886386
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1007,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 1024,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 57.05186254298587
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affected": 2893,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 940,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 313.99965810161973
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1032,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.02724979507695
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1026,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 314.02433253146006
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 1000,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 56.91066215327475
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affected": 2976,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 251.90314361015936
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 966,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.89134154622067
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 1038,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 963,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 112.77635915194438
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affected": 3119,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 100,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": null
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 989,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 426.13205502331596
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 1005,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.65800063686436
+      },
+      {
+        "rep": 5,
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 982,
+        "pctCommitted": 100,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 425.6067520605321
+      },
+      {
+        "rep": 5,
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 943,
+        "pctCommitted": 0,
+        "pctAborted": 100,
+        "pctBlocked": 0,
+        "pctInconsistent": 0,
+        "meanRecoveryMs": 113.20966681137816
+      },
+      {
+        "rep": 5,
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affected": 2965,
+        "pctCommitted": 0,
+        "pctAborted": 0,
+        "pctBlocked": 0,
+        "pctInconsistent": 100,
+        "meanRecoveryMs": 303.5697050842647
+      }
+    ]
+  },
+  "aggregate": {
+    "normalAgg": [
+      {
+        "profile": "LAN",
+        "latency2PC": {
+          "n": 5,
+          "mean": 24.672239705350233,
+          "sd": 0.0037840386566809765,
+          "min": 24.666968989549762,
+          "max": 24.67582148265168,
+          "ci95": 0.004697751328066401
+        },
+        "latency3PC": {
+          "n": 5,
+          "mean": 37.002701554217765,
+          "sd": 0.00671050737100493,
+          "min": 36.99775033735325,
+          "max": 37.014261360087154,
+          "ci95": 0.00833085963814865
+        },
+        "txStd2PC": {
+          "n": 5,
+          "mean": 0.7937922191788268,
+          "sd": 0.004000806829783039,
+          "min": 0.7895719268882032,
+          "max": 0.8002584472622938,
+          "ci95": 0.004966861415320617
+        },
+        "txStd3PC": {
+          "n": 5,
+          "mean": 0.9713232826274375,
+          "sd": 0.008169386383062686,
+          "min": 0.9627404232912012,
+          "max": 0.9833565249528797,
+          "ci95": 0.01014200678493646
+        },
+        "p99_2PC": {
+          "n": 5,
+          "mean": 25.884062446840108,
+          "sd": 0.00678720991564949,
+          "min": 25.875462708063424,
+          "max": 25.89256372861564,
+          "ci95": 0.008426083158218635
+        },
+        "p99_3PC": {
+          "n": 5,
+          "mean": 38.6608526295051,
+          "sd": 0.018997379402997495,
+          "min": 38.638454590924084,
+          "max": 38.68946610856801,
+          "ci95": 0.023584580501746395
+        },
+        "tps2PC": {
+          "n": 5,
+          "mean": 4053.1383885776727,
+          "sd": 0.6216722016267008,
+          "min": 4052.5499858355242,
+          "max": 4054.0043668261515,
+          "ci95": 0.7717842431809001
+        },
+        "tps3PC": {
+          "n": 5,
+          "mean": 2702.5054504203536,
+          "sd": 0.4900060233056339,
+          "min": 2701.6613684970353,
+          "max": 2702.8670415952056,
+          "ci95": 0.6083252988656368
+        },
+        "latencyOverheadPct": {
+          "n": 5,
+          "mean": 49.977072394249,
+          "sd": 0.045940804510177236,
+          "min": 49.93770553225138,
+          "max": 50.05597718863781,
+          "ci95": 0.05703389816567595
+        },
+        "throughputDropPct": {
+          "n": 5,
+          "mean": 33.32313672508893,
+          "sd": 0.020417654852710375,
+          "min": 33.30563540036955,
+          "max": 33.358202803019054,
+          "ci95": 0.02534780267928117
+        },
+        "messages2PC": 10,
+        "messages3PC": 15
+      },
+      {
+        "profile": "WAN-Near",
+        "latency2PC": {
+          "n": 5,
+          "mean": 69.98974304380889,
+          "sd": 0.025110028988085464,
+          "min": 69.96498729056073,
+          "max": 70.0298359603067,
+          "ci95": 0.031173220658910754
+        },
+        "latency3PC": {
+          "n": 5,
+          "mean": 104.98490539427239,
+          "sd": 0.00876017794648175,
+          "min": 104.97191741113839,
+          "max": 104.99659339803569,
+          "ci95": 0.010875453798423541
+        },
+        "txStd2PC": {
+          "n": 5,
+          "mean": 2.395933537967083,
+          "sd": 0.024370959127366046,
+          "min": 2.3590790632353196,
+          "max": 2.420024092973954,
+          "ci95": 0.030255691337798114
+        },
+        "txStd3PC": {
+          "n": 5,
+          "mean": 2.92968765575059,
+          "sd": 0.01018880481790979,
+          "min": 2.9181379990208387,
+          "max": 2.9450414041024624,
+          "ci95": 0.012649043973226092
+        },
+        "p99_2PC": {
+          "n": 5,
+          "mean": 73.63963412344455,
+          "sd": 0.011462786474605653,
+          "min": 73.6253126449883,
+          "max": 73.65324420575052,
+          "ci95": 0.014230647535628546
+        },
+        "p99_3PC": {
+          "n": 5,
+          "mean": 109.99024802371859,
+          "sd": 0.024256831496830666,
+          "min": 109.95289944950491,
+          "max": 110.01188409235328,
+          "ci95": 0.03011400588567673
+        },
+        "tps2PC": {
+          "n": 5,
+          "mean": 1428.780931968985,
+          "sd": 0.5124647308182708,
+          "min": 1427.9627908407576,
+          "max": 1429.286331243162,
+          "ci95": 0.6362069968651718
+        },
+        "tps3PC": {
+          "n": 5,
+          "mean": 952.5178898953867,
+          "sd": 0.0794817096791441,
+          "min": 952.411852267493,
+          "max": 952.6357378834463,
+          "ci95": 0.09867375602597249
+        },
+        "latencyOverheadPct": {
+          "n": 5,
+          "mean": 50.00043232954028,
+          "sd": 0.0596702906134087,
+          "min": 49.9161612969672,
+          "max": 50.070195770908434,
+          "ci95": 0.07407857382226571
+        },
+        "throughputDropPct": {
+          "n": 5,
+          "mean": 33.333517038455,
+          "sd": 0.02652328590132197,
+          "min": 33.29605084944035,
+          "max": 33.36451686072545,
+          "ci95": 0.03292772956947222
+        },
+        "messages2PC": 10,
+        "messages3PC": 15
+      },
+      {
+        "profile": "WAN-Far",
+        "latency2PC": {
+          "n": 5,
+          "mean": 115.34798441575924,
+          "sd": 0.04404220909076546,
+          "min": 115.27311444389214,
+          "max": 115.38668781868088,
+          "ci95": 0.05467685851512822
+        },
+        "latency3PC": {
+          "n": 5,
+          "mean": 173.00892062420138,
+          "sd": 0.060553925522300586,
+          "min": 172.94317648731683,
+          "max": 173.08819454774027,
+          "ci95": 0.07517557558239404
+        },
+        "txStd2PC": {
+          "n": 5,
+          "mean": 3.9756737087232294,
+          "sd": 0.04572385710341488,
+          "min": 3.912976215656824,
+          "max": 4.024006087364517,
+          "ci95": 0.05676456556611621
+        },
+        "txStd3PC": {
+          "n": 5,
+          "mean": 4.8975988933712555,
+          "sd": 0.05121840404567961,
+          "min": 4.838750600067174,
+          "max": 4.966732774909859,
+          "ci95": 0.0635858529622094
+        },
+        "p99_2PC": {
+          "n": 5,
+          "mean": 121.40831193700433,
+          "sd": 0.01579473482525239,
+          "min": 121.39397162292153,
+          "max": 121.43170435260981,
+          "ci95": 0.019608609539646587
+        },
+        "p99_3PC": {
+          "n": 5,
+          "mean": 181.2725989278406,
+          "sd": 0.05473432641576559,
+          "min": 181.1995234405622,
+          "max": 181.35345772560686,
+          "ci95": 0.06795074732032808
+        },
+        "tps2PC": {
+          "n": 5,
+          "mean": 866.9419944700437,
+          "sd": 0.33114534975054977,
+          "min": 866.6511006637127,
+          "max": 867.5049727113416,
+          "ci95": 0.41110534212621563
+        },
+        "tps3PC": {
+          "n": 5,
+          "mean": 578.0049343058508,
+          "sd": 0.20229320080557417,
+          "min": 577.740152997081,
+          "max": 578.224605509855,
+          "ci95": 0.25113991662461727
+        },
+        "latencyOverheadPct": {
+          "n": 5,
+          "mean": 49.98870794539533,
+          "sd": 0.09749718580225832,
+          "min": 49.91310409368725,
+          "max": 50.154869487792794,
+          "ci95": 0.12103933803018496
+        },
+        "throughputDropPct": {
+          "n": 5,
+          "mean": 33.328291742943634,
+          "sd": 0.043308794269242154,
+          "min": 33.294690544526624,
+          "max": 33.40209322473572,
+          "ci95": 0.053766349726918135
+        },
+        "messages2PC": 10,
+        "messages3PC": 15
+      },
+      {
+        "profile": "Cross-Region",
+        "latency2PC": {
+          "n": 5,
+          "mean": 228.65222264579234,
+          "sd": 0.09523940812897146,
+          "min": 228.54259196970983,
+          "max": 228.76124461745843,
+          "ci95": 0.11823638620398319
+        },
+        "latency3PC": {
+          "n": 5,
+          "mean": 342.92766541552953,
+          "sd": 0.09350120938048279,
+          "min": 342.8123866389338,
+          "max": 343.0485199900279,
+          "ci95": 0.11607847339705689
+        },
+        "txStd2PC": {
+          "n": 5,
+          "mean": 7.960259518536563,
+          "sd": 0.05590577231347669,
+          "min": 7.883477149105748,
+          "max": 8.011163481529792,
+          "ci95": 0.06940505633274106
+        },
+        "txStd3PC": {
+          "n": 5,
+          "mean": 9.741517791234816,
+          "sd": 0.06579912096571273,
+          "min": 9.626875602048196,
+          "max": 9.796006855752113,
+          "ci95": 0.08168730183464903
+        },
+        "p99_2PC": {
+          "n": 5,
+          "mean": 240.8489013016224,
+          "sd": 0.03752356030168051,
+          "min": 240.80561435595155,
+          "max": 240.90824668109417,
+          "ci95": 0.0465841845800839
+        },
+        "p99_3PC": {
+          "n": 5,
+          "mean": 359.64491269364953,
+          "sd": 0.05836300927268519,
+          "min": 359.57816564664245,
+          "max": 359.7362693976611,
+          "ci95": 0.07245562986959295
+        },
+        "tps2PC": {
+          "n": 5,
+          "mean": 437.3454704410794,
+          "sd": 0.18217803816221304,
+          "min": 437.1369816912085,
+          "max": 437.5552020222717,
+          "ci95": 0.2261676474182015
+        },
+        "tps3PC": {
+          "n": 5,
+          "mean": 291.60670319799493,
+          "sd": 0.07950709665761499,
+          "min": 291.50395402640686,
+          "max": 291.7047455036236,
+          "ci95": 0.09870527306970477
+        },
+        "latencyOverheadPct": {
+          "n": 5,
+          "mean": 49.97786676432952,
+          "sd": 0.0876114200561663,
+          "min": 49.85597198170309,
+          "max": 50.06208928510598,
+          "ci95": 0.10876650644040652
+        },
+        "throughputDropPct": {
+          "n": 5,
+          "mean": 33.32347668155253,
+          "sd": 0.038958434196146266,
+          "min": 33.2692593577721,
+          "max": 33.36091715342708,
+          "ci95": 0.04836553021497406
+        },
+        "messages2PC": 10,
+        "messages3PC": 15
+      }
+    ],
+    "failureAgg": [
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 993.2,
+          "sd": 28.06599365780588,
+          "min": 950,
+          "max": 1027,
+          "ci95": 34.8429471635222
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 12.203030758601688,
+          "sd": 0.008691490311650174,
+          "min": 12.19474435103612,
+          "max": 12.217826405623438,
+          "ci95": 0.01079018050789252
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1007.4,
+          "sd": 23.20129306741329,
+          "min": 973,
+          "max": 1033,
+          "ci95": 28.803591931562973
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 224.41914265854274,
+          "sd": 0.0332861887993044,
+          "min": 224.364605998859,
+          "max": 224.44799476209937,
+          "ci95": 0.04132363641743432
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1003.8,
+          "sd": 37.352376095772,
+          "min": 952,
+          "max": 1045,
+          "ci95": 46.37166538997709
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 34.58690527459204,
+          "sd": 0.06288035997480307,
+          "min": 34.50843696536538,
+          "max": 34.6616015640555,
+          "ci95": 0.07806376239296138
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 996.2,
+          "sd": 15.833508770957875,
+          "min": 984,
+          "max": 1015,
+          "ci95": 19.65674603386837
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 269.2202583893834,
+          "sd": 0.07414817065997745,
+          "min": 269.1449023284784,
+          "max": 269.33497059294564,
+          "ci95": 0.09205235432164616
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1005.4,
+          "sd": 20.501219475923865,
+          "min": 981,
+          "max": 1035,
+          "ci95": 25.451545229317606
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 57.007380241631594,
+          "sd": 0.05990531705819772,
+          "min": 56.935450507899304,
+          "max": 57.085709093886386,
+          "ci95": 0.0743703509137045
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 963.6,
+          "sd": 31.981244503614928,
+          "min": 929,
+          "max": 1001,
+          "ci95": 39.70359382423712
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 314.01354752405575,
+          "sd": 0.2611316656260646,
+          "min": 313.6998111323312,
+          "max": 314.41735002098125,
+          "ci95": 0.3241858078878657
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 986.8,
+          "sd": 19.651971911235776,
+          "min": 965,
+          "max": 1005,
+          "ci95": 24.397234151436095
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 112.84708128060845,
+          "sd": 0.11992922402297149,
+          "min": 112.71317266752546,
+          "max": 113.02865842090627,
+          "ci95": 0.14888792703879242
+        }
+      },
+      {
+        "scenario": "coordinatorCrashFirstPhase",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 988.4,
+          "sd": 36.33593262873543,
+          "min": 946,
+          "max": 1036,
+          "ci95": 45.10978646103304
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 426.07763617403464,
+          "sd": 0.21407470763485856,
+          "min": 425.8264688771773,
+          "max": 426.33603109577024,
+          "ci95": 0.26576624430659695
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 993,
+          "sd": 36.70830968595531,
+          "min": 939,
+          "max": 1038,
+          "ci95": 45.57207952244444
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1000.2,
+          "sd": 32.01093563143696,
+          "min": 978,
+          "max": 1049,
+          "ci95": 39.74045431849012
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 224.4028233691393,
+          "sd": 0.01835405469845013,
+          "min": 224.38072606291797,
+          "max": 224.42524492103544,
+          "ci95": 0.022785915435302253
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 999.6,
+          "sd": 35.26045944113604,
+          "min": 949,
+          "max": 1042,
+          "ci95": 43.774624203526855
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1011.4,
+          "sd": 22.38972978845435,
+          "min": 973,
+          "max": 1030,
+          "ci95": 27.796064573244895
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 269.191905597129,
+          "sd": 0.0321317929749831,
+          "min": 269.1606761611139,
+          "max": 269.2399091042862,
+          "ci95": 0.039890494473378085
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 992.8,
+          "sd": 15.073154945133417,
+          "min": 970,
+          "max": 1007,
+          "ci95": 18.712793416270053
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1027.8,
+          "sd": 39.02178878524151,
+          "min": 993,
+          "max": 1088,
+          "ci95": 48.444182716194106
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 314.1373126805496,
+          "sd": 0.18258292378392432,
+          "min": 313.8865447776935,
+          "max": 314.32173163820835,
+          "ci95": 0.22667029872271469
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1014.8,
+          "sd": 41.769606174825256,
+          "min": 955,
+          "max": 1067,
+          "ci95": 51.85550166992891
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "coordinatorCrashAfterVotes",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1018.8,
+          "sd": 20.0922870773837,
+          "min": 998,
+          "max": 1044,
+          "ci95": 24.94386999324683
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 426.13419579809596,
+          "sd": 0.45542012847931107,
+          "min": 425.65303112884345,
+          "max": 426.63480682166625,
+          "ci95": 0.5653881229819124
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 994.2,
+          "sd": 13.442470011125186,
+          "min": 975,
+          "max": 1009,
+          "ci95": 16.688355240706017
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 224.38571999124775,
+          "sd": 0.031038043714301498,
+          "min": 224.34003745034943,
+          "max": 224.4239479361586,
+          "ci95": 0.038532643111879206
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1009.2,
+          "sd": 22.44326179502436,
+          "min": 978,
+          "max": 1034,
+          "ci95": 27.86252268262872
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 269.21716868394856,
+          "sd": 0.06280218505068438,
+          "min": 269.14785746111386,
+          "max": 269.2900178179495,
+          "ci95": 0.07796671096539427
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 993.4,
+          "sd": 35.47957158704147,
+          "min": 936,
+          "max": 1026,
+          "ci95": 44.04664425083936
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 313.9216519341715,
+          "sd": 0.09459899715675761,
+          "min": 313.7925699664328,
+          "max": 314.02433253146006,
+          "ci95": 0.1174413384340789
+        }
+      },
+      {
+        "scenario": "coordinatorCrashAfterPreCommit",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1010.8,
+          "sd": 24.83344518990468,
+          "min": 982,
+          "max": 1037,
+          "ci95": 30.829851570190854
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 425.813017972435,
+          "sd": 0.13131493988484175,
+          "min": 425.6067520605321,
+          "max": 425.9633090359349,
+          "ci95": 0.16302289411072027
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1003.2,
+          "sd": 11.819475453673906,
+          "min": 992,
+          "max": 1022,
+          "ci95": 14.673464398021345
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 12.187379436101143,
+          "sd": 0.023115383796225377,
+          "min": 12.162188307584872,
+          "max": 12.214797718320023,
+          "ci95": 0.02869693858326705
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1026.6,
+          "sd": 41.926125506657534,
+          "min": 962,
+          "max": 1078,
+          "ci95": 52.04981493300431
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 12.19913275117683,
+          "sd": 0.018275230215486212,
+          "min": 12.168628633995679,
+          "max": 12.216809117062207,
+          "ci95": 0.022688057603201594
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 986.4,
+          "sd": 52.624138947825074,
+          "min": 926,
+          "max": 1068,
+          "ci95": 65.33102355971471
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 34.574207354744814,
+          "sd": 0.06523791068453076,
+          "min": 34.516907953500315,
+          "max": 34.68327081905685,
+          "ci95": 0.08099057894597232
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 999.8,
+          "sd": 14.956603892595403,
+          "min": 985,
+          "max": 1020,
+          "ci95": 18.56809937069489
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 34.5937291165128,
+          "sd": 0.0502734401320872,
+          "min": 34.53662510342512,
+          "max": 34.66179717480853,
+          "ci95": 0.06241271339287231
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1020.8,
+          "sd": 8.408329203831164,
+          "min": 1011,
+          "max": 1032,
+          "ci95": 10.438645919849948
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 57.025355610787734,
+          "sd": 0.04833179847370835,
+          "min": 56.95194842593741,
+          "max": 57.081292313152154,
+          "ci95": 0.06000223334580042
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 1010.8,
+          "sd": 33.33466664000107,
+          "min": 992,
+          "max": 1070,
+          "ci95": 41.38381995707984
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 57.03593081713301,
+          "sd": 0.110364439183388,
+          "min": 56.91066215327475,
+          "max": 57.18536460176279,
+          "ci95": 0.13701358199120933
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 995.6,
+          "sd": 26.349573051569546,
+          "min": 963,
+          "max": 1036,
+          "ci95": 32.71207115668465
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 112.94914892617092,
+          "sd": 0.25929552375378495,
+          "min": 112.68040509437313,
+          "max": 113.24897717195469,
+          "ci95": 0.3219063021265304
+        }
+      },
+      {
+        "scenario": "participantCrash",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 973.8,
+          "sd": 22.960836221705865,
+          "min": 943,
+          "max": 994,
+          "ci95": 28.50507318776782
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 113.22517757421024,
+          "sd": 0.20271560723274837,
+          "min": 113.01247277257896,
+          "max": 113.55107251250197,
+          "ci95": 0.25166431939485273
+        }
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 3007.6,
+          "sd": 56.43846206267495,
+          "min": 2944,
+          "max": 3080,
+          "ci95": 70.06637198085825
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "LAN",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 3018.8,
+          "sd": 51.402334577332184,
+          "min": 2937,
+          "max": 3079,
+          "ci95": 63.8141962688554
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 212.0788160097598,
+          "sd": 0.11340311939526924,
+          "min": 211.91794960087756,
+          "max": 212.20748765908712,
+          "ci95": 0.14078599694149818
+        }
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 3001,
+          "sd": 18.069310999592652,
+          "min": 2979,
+          "max": 3026,
+          "ci95": 22.432416115969314
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "WAN-Near",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 2979.8,
+          "sd": 55.97946051901536,
+          "min": 2913,
+          "max": 3064,
+          "ci95": 69.49653765649047
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 232.01999088629526,
+          "sd": 0.5185067784663482,
+          "min": 231.37194245788254,
+          "max": 232.54811237861304,
+          "ci95": 0.6437079871927631
+        }
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 2969.8,
+          "sd": 58.04050309912897,
+          "min": 2893,
+          "max": 3053,
+          "ci95": 72.05524976183206
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "WAN-Far",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 2994.6,
+          "sd": 56.73006257708518,
+          "min": 2939,
+          "max": 3064,
+          "ci95": 70.42838379630757
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 252.62622927121168,
+          "sd": 0.9895784114483823,
+          "min": 251.90314361015936,
+          "max": 254.3329359571224,
+          "ci95": 1.2285269042903983
+        }
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "2PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 3007.4,
+          "sd": 89.62867844613129,
+          "min": 2925,
+          "max": 3119,
+          "ci95": 111.27086200870377
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "meanRecoveryMs": null
+      },
+      {
+        "scenario": "networkPartition",
+        "profile": "Cross-Region",
+        "protocol": "3PC",
+        "affectedPerRun": {
+          "n": 5,
+          "mean": 2967.8,
+          "sd": 26.508489206290125,
+          "min": 2928,
+          "max": 2999,
+          "ci95": 32.90935999134592
+        },
+        "pctCommitted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctAborted": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctBlocked": {
+          "n": 5,
+          "mean": 0,
+          "sd": 0,
+          "min": 0,
+          "max": 0,
+          "ci95": 0
+        },
+        "pctInconsistent": {
+          "n": 5,
+          "mean": 100,
+          "sd": 0,
+          "min": 100,
+          "max": 100,
+          "ci95": 0
+        },
+        "meanRecoveryMs": {
+          "n": 5,
+          "mean": 301.82372061960785,
+          "sd": 1.5221487935512572,
+          "min": 300.04718096999227,
+          "max": 303.5697050842647,
+          "ci95": 1.889694362343547
+        }
+      }
+    ]
+  }
+}
